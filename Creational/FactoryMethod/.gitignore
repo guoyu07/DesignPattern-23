@@ -1,0 +1,10 @@
+/CMakeFiles
+/.git
+/.cproject
+/.project
+/.csettings
+/[Targets]
+/cmake_install.cmake
+/CMakeCache.txt
+/FactoryMethod
+/Makefile

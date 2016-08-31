@@ -1,0 +1,6 @@
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/rebuild_cache.dir
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/command.dir
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/projclean.dir
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/edit_cache.dir
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/clean-all.dir
+/home/developer/git_clones/DesignPattern/Behaviour/Command/CMakeFiles/distclean.dir

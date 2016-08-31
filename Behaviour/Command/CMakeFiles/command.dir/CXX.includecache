@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/developer/git_clones/DesignPattern/Behaviour/Command/Switch.h
+iostream
+-
+
+/home/developer/git_clones/DesignPattern/Behaviour/Command/main.cpp
+memory
+-
+Switch.h
+/home/developer/git_clones/DesignPattern/Behaviour/Command/Switch.h
+

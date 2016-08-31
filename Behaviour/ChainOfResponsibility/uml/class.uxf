@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>80</y>
+      <w>360</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>MoneyHandler
+--
+#nextHandler : MoneyHandler*
+/#handle(int&amp; amount_) : int/
+--
++setNextHandler(MoneyHandler* next_) : void
++calculate(int sum_) : void
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>330</y>
+      <w>360</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>HundredHandler
+--
+#handle(int&amp; amount_) : int
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>330</y>
+      <w>360</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>FiftyHandler
+--
+#handle(int&amp; amount_) : int
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>330</y>
+      <w>360</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>TwentyHandler
+--
+#handle(int&amp; amount_) : int
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>170</y>
+      <w>360</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>340.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>170</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>170</y>
+      <w>350</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;330.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>50</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+nextHandler</panel_attributes>
+    <additional_attributes>30.0;40.0;70.0;40.0;70.0;10.0;10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+</diagram>

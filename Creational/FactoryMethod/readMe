@@ -1,0 +1,46 @@
+Factory Method.
+
+Problem statement:
+A framework needs to standardize the architectural model for a range of applications, but allow for individual applications to define their own domain objects and provide for their instantiation.
+
+Definition:
+Define an interface for creating an object, but let subclasses decide which class to instantiate.
+
+Keys:
+1. A superclass defines the standard and generic behavior of the object CREATION step (provides method that returns an object)
+2. The object creation detail is delegated to subclasses 
+3. the client is totally decoupled from the implementation details of the derived classes.
+
+Case study:
+A kid requests a toy to his parent. The parent then visits a toy store, mentions a toy name to the shop keeper.
+Finally, he gets the toy as specified by the name. For simplicity, the store provides 3 name of toys, i.e. doll, car, and chess.
+
+Steps:
+Product (object/instance to product) preparation:
+1. create a base class of a product type that is expected for creation (Equip it with some properties and methods).
+2. create some sub-classes that inherit the base product type.
+
+The Factory (place to ask the product instance) preparation:
+3. provide a base class (an abstract or interface) which the client will interact with.
+4. on that abstract class, create a method that returns an instance of a type.
+5. define some sub-classes that inherit that abstract class.
+6. on each sub-classes, override the method (that returns an instance of a type) by creating an instance type (depend on the sub-class intention) then returning it out the method. 
+
+How to call the code:
+7. define a toyFactory  variable (the base class).
+8. instantiate the factory variable with a certain factory expected (it can be driven from a user input)
+9. call the factory object to return the expected product/toy.
+
+Enhancement points:
+1. hide the default constructor of the product (toy) so there is no way for other class to do direct instantiation.
+2. define the product creation argument to be something easier to access/distinguish by the client, e.g. enum (instead of entrying number 1,2, or 3).
+3. object pool, i.e. a feature to manage whether the returned object is a new instance or an existing one.
+
+Note: 
+if the structure like above (step 3-6) is not performed (for example it is replaced by a class that provides method to return an instance - no inheritance structure), the pattern will be called "Simple Factory" (the variation will be at method which returns an instance, it will accept an argument to distinguish the characteristic of an instance to create).
+
+Related:
+1. Abstract Factory design pattern.
+
+Reference:
+https://sourcemaking.com/design_patterns/factory_method
